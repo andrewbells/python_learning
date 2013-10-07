@@ -1,0 +1,24 @@
+'''Reverse Polish Notation --> str "5 8 3 + *" evaluates to 55'''
+ 
+math_operators = {'+': lambda a, b: a + b, '-': lambda a, b: a - b, '*': lambda a, b: a * b, '/': lambda a, b: a / b}
+ 
+def main():
+    input_data = input('Input an expression using Reverse Polish Notation. Use space to separate characters: ')
+    print (reverse_polish(input_data))
+ 
+def reverse_polish(data):
+    elements = data.split()
+    
+    stack = []
+    while elements:
+        e = elements.pop(0)
+        if e in math_operators:
+            b = stack.pop()
+            a = stack.pop()
+            stack.append(math_operators[e](a, b))
+        else:
+            stack.append(int(e))
+    return stack[0]
+ 
+if __name__ == '__main__':
+    main()
