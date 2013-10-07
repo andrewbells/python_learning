@@ -1,0 +1,110 @@
+Copy
+This is a simple sample text to
+try out reading
+and
+writing files in python33.
+
+>>> filename = '/readnwrite.txt'
+>>> file = open(filename)
+>>> file.readline()
+'This is a simple sample text to\n'
+>>> file.readline()
+'try out reading\n'
+>>> file.readline()
+'and\n'
+>>> file.readline()
+'writing files in python33.'
+>>> file.readline()
+''
+>>> file.readline()
+''
+>>> file.close()
+>>> file = open(filename)
+>>> line = file.readline()
+>>> while line != '':
+	print line
+	
+SyntaxError: invalid syntax
+>>> while line != '':
+	print (line)
+	line = file.readline()
+
+	
+This is a simple sample text to
+
+try out reading
+
+and
+
+writing files in python33.
+>>> file.close()
+>>> file = open(filename)
+>>> line = file.readline()
+>>> while line != '':
+	
+SyntaxError: multiple statements found while compiling a single statement
+>>> file.close()
+>>> file = open(filename)
+>>> line = file.readline()
+>>> while line != '':
+	print (line, end = '')
+	line = file.readline()
+
+	
+This is a simple sample text to
+try out reading
+and
+writing files in python33.
+>>> file.close()
+>>> file = open(filename)
+>>> for line in file:
+	print (line, end = '')
+
+	
+This is a simple sample text to
+try out reading
+and
+writing files in python33.
+>>> file.readlines()
+[]
+>>> file.close()
+>>> file = open(filename)
+>>> file.readlines
+<built-in method readlines of _io.TextIOWrapper object at 0x01EA7DB0>
+>>> file.readlines()
+['This is a simple sample text to\n', 'try out reading\n', 'and\n', 'writing files in python33.']
+>>> file.close()
+>>> file = open(filename)
+>>> print (file.read())
+This is a simple sample text to
+try out reading
+and
+writing files in python33.
+>>> file.close()
+>>> file = open(filename)
+>>> file.readlines()
+['This is a simple sample text to\n', 'try out reading\n', 'and\n', 'writing files in python33.']
+>>> file.close()
+>>> file = open(filename)
+>>> lines = file.readlines()
+>>> for line in lines:
+	print (line)
+
+	
+This is a simple sample text to
+
+try out reading
+
+and
+
+writing files in python33.
+>>> for line in lines:
+	print (line, end = '')
+
+	
+This is a simple sample text to
+try out reading
+and
+writing files in python33.
+>>> lines[0]
+'This is a simple sample text to\n'
