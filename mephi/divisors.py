@@ -26,14 +26,17 @@ def find_divisors(a, b):
             
             else:
                 divisors_dict[x] = divisors_list
+        #start printing values in the table:
         if 1 <= (len(divisors_list)) <= 4:
             t.add_row([ '', divisors_list, ''])
         elif (len(divisors_list)) == 0:
             t.add_row([ '', '...', ''])
         else:
+            #the case for lists longer than 4
             while len(divisors_list) > 5:
                 t.add_row([ '', divisors_list[:4], ''])
                 divisors_list = divisors_list[4:]
+            #print the rest of the the list
             t.add_row([ '', divisors_list[:4], ''])
         t.add_row([ '-', '-', num_divisors])
         t.add_row(['------','-----------------','------'])
