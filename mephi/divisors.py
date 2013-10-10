@@ -26,6 +26,7 @@ def find_divisors(a, b):
             
             else:
                 divisors_dict[x] = divisors_list
+
         #start printing values in the table:
         if 1 <= (len(divisors_list)) <= 4:
             t.add_row([ '', divisors_list, ''])
@@ -38,8 +39,18 @@ def find_divisors(a, b):
                 divisors_list = divisors_list[4:]
             #print the rest of the the list
             t.add_row([ '', divisors_list[:4], ''])
-        t.add_row([ '-', '-', num_divisors])
+
+
+        if num_divisors == 0:
+            t.add_row([ '-', '-', '...'])
+        else:
+            t.add_row([ '-', '-', num_divisors])
+        '''in order to output num_divisors == 0 in the table comment out upper if else block and remove hash tag
+        from the line below'''
+        #t.add_row([ '-', '-', num_divisors])
+        
         t.add_row(['------','-----------------','------'])
+
         num_divisors_dict[x] = num_divisors
         #print('number %d has %d divisors' % (x, num_divisors))
         
@@ -82,8 +93,15 @@ def max_num_least(a, b):
                 #p.add_row([ '', y, ''])    
         #p.add_row([ '-', '-', num_divisors])
         #p.add_row(['------','------','------'])
+
+
         if num_divisors >= 1:
             num_div.append(num_divisors)
+        '''if num_divisors == 0 is considered an option for the output of max_val,
+        then comment out two upper lines and remove hash tag from the line below'''
+        #num_div.append(num_divisors)
+
+
         output.append(num_divisors)
         master.append(output)
     #print (p)
@@ -91,7 +109,8 @@ def max_num_least(a, b):
     #print (values)
     #print (num_div)
     '''
-    note that i skipped zeros in num_divisors since we dont take values without divisors into account
+    note that i skipped zeros in num_divisors since we dont take values without divisors into account.
+    if zeros should be included, then check upper comment.
     as soon as i get all three lists filled we can start analyzing:
     '''
     
