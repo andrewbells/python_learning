@@ -27,7 +27,7 @@ def values(n):
         j += 2
         i -= 1
         counter += 1
-        t.add_row([ counter,result])
+        t.add_row([counter, result])
     print(t)
     print('Result of the expression is %d' %result)
     
