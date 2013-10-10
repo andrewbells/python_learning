@@ -3,13 +3,11 @@
 def main():
     num_1 = int(input('add first number: '))
     num_2 = int(input('add last number: '))
-    #find_divisors(num_1, num_2)
+    find_divisors(num_1, num_2)
     max_num_least(num_1, num_2)
     
 
 def find_divisors(a, b):
-    #global divisors_dict
-    #global num_divisors_dict
     divisors_dict = {}
     num_divisors_dict = {}
     for x in range(a, b + 1):
