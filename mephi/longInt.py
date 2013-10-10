@@ -1,3 +1,7 @@
+'''user inputs a positive int. program
+calculates the sum of the following expression 1**n + 3**(n-1) + 5**(n-2) +
++ 7**(n-3) + ... + (2*n - 3)**2 + (2*n - 1)**1'''
+
 def main():
     
     num = int(input('input a positive int: ' ))    
