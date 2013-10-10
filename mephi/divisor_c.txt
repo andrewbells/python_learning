@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <limits.h>
+#include <locale.h>
+#include <math.h>
+int main (void) {
+    setlocale(LC_ALL,"");
+	printf(" Интервал из целых чисел от 590 до 610\n\n");
+    int i,a,b,c,j,l,v,f,g; 
+	i=590;b=0;a=0;l=0;v=0,f=0,g=0;
+	printf("Число \tДелители    \t Количество делителей\n");    
+   for (i>=590; i<=610;i++)
+    {
+      printf("  %d   ",i);
+     for (j=2;j<i;j++)
+    {
+      c=i%j;
+      if (c==0)
+     {
+     a++;
+     b++;
+      printf("%d, ", j);
+     if (b==4)
+   { printf("\n\t ");
+      b=0;
+   }
+    }
+    c=-1;
+    }
+      b=0;
+     printf(" \t\t\t%d\n",a);
+     if (l>=a)
+     {
+      l=a;
+     v=i;
+    }
+     if (f<=a)
+	{
+		f=a;
+		g=i;
+	}
+	a=0;
+    }
+      printf("\n");
+      printf("Количество делителей минимально (%d) у числа %d\n",l,v);
+	  printf("\n");
+      printf("Количество делителей максимально (%d) у числа %d\n",f,g);
+ return 0;
+    }
