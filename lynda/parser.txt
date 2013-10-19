@@ -1,0 +1,3207 @@
+encountered some data:  Показать на карте ''' everything has been simply copypasted'''
+at line:  1152  position  129
+encountered an end tag: a
+at line:  1152  position  146
+encountered some data:  		
+
+	
+at line:  1152  position  150
+encountered an end tag: div
+at line:  1154  position  1
+encountered some data:  	
+
+	
+
+
+
+	
+
+		
+at line:  1154  position  7
+at line:  1162  position  2
+	Attributes:
+	 class = hotelmap
+	 id = G_hotels_on_map
+	 style = display:none
+encountered some data:  
+		
+at line:  1162  position  67
+at line:  1163  position  2
+	Attributes:
+	 style = height: 480px
+	 class = gmap
+	 id = GMaphotels_location
+encountered an end tag: div
+at line:  1163  position  68
+encountered some data:  		
+	
+at line:  1163  position  74
+encountered an end tag: div
+at line:  1164  position  1
+encountered some data:  
+
+
+	
+at line:  1164  position  7
+at line:  1167  position  1
+	Attributes:
+	 type = text/javascript
+encountered some data:  
+		//document.write('<script type="text/javascript" src="/public/js/markermanager' + (document.location.search.indexOf('packed') > -1 ? '_packed' : '') + '.js"><' + '/script>');
+	
+at line:  1167  position  32
+encountered an end tag: script
+at line:  1169  position  1
+encountered some data:  
+	
+at line:  1169  position  10
+at line:  1170  position  1
+	Attributes:
+	 type = text/javascript
+	 src = /public/js/jq_gmaps.js
+encountered an end tag: script
+at line:  1170  position  61
+encountered some data:  
+	
+	
+
+at line:  1170  position  70
+encountered comment:  <script src="http://maps.google.com/maps?file=api&amp;v=3.x&key=AIzaSyAmCokr6FPque1uKcy46SImkX_9SFii75U" type="text/javascript"></script>
+at line:  1173  position  0
+encountered some data:  
+
+    
+at line:  1173  position  144
+at line:  1175  position  4
+encountered some data:  
+        $().ready(function() {map="";});
+	
+    var ginfowindows = new Array();
+	
+	markerCluster = "";
+	map="";
+	data=[];
+	all_baloons = [];
+	infowindow="";
+	ballon="";
+    
+    function initialize()
+    {
+	var j=0;      
+	
+		    data.push([59.930549,30.323863999999958]);
+
+	    all_baloons[j] = '<div style="width: 330px; float:left; clear:both;">'+
+	    
+			    '<div class="hotelava" style="width: 90px; padding-bottom: 10px; float: left;">'+
+				    '<a href="/druzya-na-bankovskom/" ><img src="/public/images/hotel/1-092199_pic_detail2_l.jpeg" alt="" border="0"></a>'+
+			    '</div>'+
+				    
+			    
+			    '<div style="width: 230px; padding-bottom: 10px; float: left;">'+
+			    '<div><a href="/druzya-na-bankovskom/" style="color: #000000; font-size: 16px; padding-bottom: 10px;">Друзья на Банковском</a></div>'+
+			    
+			    '<div class="hoteladdr" style="font-size: 10px; padding-bottom: 10px; color:#989898; display: block;">'+
+				    'Санкт-Петербург, Банковский пер., д. 3'+
+		    '</div>'+
+				    '<div class="hotelmenu" style="display: block;">'+
+					    '<a style="font-size: 10px; " href="/druzya-na-bankovskom/">Описание</a> '+
+					    '<a style="font-size: 10px; " href="/druzya-na-bankovskom/price/">Номера и цены</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-bankovskom/location/">Расположение</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-bankovskom/review/">Отзывы</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-bankovskom/foto/">Медиа</a> '+	
+					    
+				    '</div>	'+
+			    '</div>'+
+			    '<div style="width: 330px;  clear:both;">'+
+				    '<a style="color:#80689d;font-size:11px;width:90px;float:left;" href="#" onclick="var fparams = {'+
+					    'hotel: \'1\''+
+			    '};'+
+			    'openform(fparams); return false;">Бронировать</a> '+
+				    
+				    '<span style="color: #999999; font-size: 10px;">'+
+					    'Место от: <b style="font-weight: normal;color: #000000; ">400 руб.</b>'+
+				    ''+
+				    ' Номер от: <b style="font-weight: normal;color: #000000;">1500 руб.</b><br/><br/><br/></span>'+
+		    '</div>'+
+			    
+		    '</div>';
+    
+	j++;
+            
+		    data.push([59.93351609177106,30.360546111083977]);
+
+	    all_baloons[j] = '<div style="width: 330px; float:left; clear:both;">'+
+	    
+			    '<div class="hotelava" style="width: 90px; padding-bottom: 10px; float: left;">'+
+				    '<a href="/druzya-na-vosstaniya/" ><img src="/public/images/hotel/7-img_5202-edit.jpg" alt="" border="0"></a>'+
+			    '</div>'+
+				    
+			    
+			    '<div style="width: 230px; padding-bottom: 10px; float: left;">'+
+			    '<div><a href="/druzya-na-vosstaniya/" style="color: #000000; font-size: 16px; padding-bottom: 10px;">Друзья на Восстания</a></div>'+
+			    
+			    '<div class="hoteladdr" style="font-size: 10px; padding-bottom: 10px; color:#989898; display: block;">'+
+				    'Санкт-Петербург, ул. Восстания, д. 11'+
+		    '</div>'+
+				    '<div class="hotelmenu" style="display: block;">'+
+					    '<a style="font-size: 10px; " href="/druzya-na-vosstaniya/">Описание</a> '+
+					    '<a style="font-size: 10px; " href="/druzya-na-vosstaniya/price/">Номера и цены</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-vosstaniya/location/">Расположение</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-vosstaniya/review/">Отзывы</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-vosstaniya/foto/">Медиа</a> '+	
+					    
+				    '</div>	'+
+			    '</div>'+
+			    '<div style="width: 330px;  clear:both;">'+
+				    '<a style="color:#80689d;font-size:11px;width:90px;float:left;" href="#" onclick="var fparams = {'+
+					    'hotel: \'7\''+
+			    '};'+
+			    'openform(fparams); return false;">Бронировать</a> '+
+				    
+				    '<span style="color: #999999; font-size: 10px;">'+
+					    'Место от: <b style="font-weight: normal;color: #000000; ">350 руб.</b>'+
+				    ''+
+				    ' Номер от: <b style="font-weight: normal;color: #000000;">1500 руб.</b><br/><br/><br/></span>'+
+		    '</div>'+
+			    
+		    '</div>';
+    
+	j++;
+            
+		    data.push([59.93425248543237,30.32711774013137]);
+
+	    all_baloons[j] = '<div style="width: 330px; float:left; clear:both;">'+
+	    
+			    '<div class="hotelava" style="width: 90px; padding-bottom: 10px; float: left;">'+
+				    '<a href="/druzya-na-griboedova/" ><img src="/public/images/hotel/2-111.jpg" alt="" border="0"></a>'+
+			    '</div>'+
+				    
+			    
+			    '<div style="width: 230px; padding-bottom: 10px; float: left;">'+
+			    '<div><a href="/druzya-na-griboedova/" style="color: #000000; font-size: 16px; padding-bottom: 10px;">Друзья на Грибоедова</a></div>'+
+			    
+			    '<div class="hoteladdr" style="font-size: 10px; padding-bottom: 10px; color:#989898; display: block;">'+
+				    'Санкт-Петербург, наб. канала Грибоедова, 20'+
+		    '</div>'+
+				    '<div class="hotelmenu" style="display: block;">'+
+					    '<a style="font-size: 10px; " href="/druzya-na-griboedova/">Описание</a> '+
+					    '<a style="font-size: 10px; " href="/druzya-na-griboedova/price/">Номера и цены</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-griboedova/location/">Расположение</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-griboedova/review/">Отзывы</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-griboedova/foto/">Медиа</a> '+	
+					    
+				    '</div>	'+
+			    '</div>'+
+			    '<div style="width: 330px;  clear:both;">'+
+				    '<a style="color:#80689d;font-size:11px;width:90px;float:left;" href="#" onclick="var fparams = {'+
+					    'hotel: \'2\''+
+			    '};'+
+			    'openform(fparams); return false;">Бронировать</a> '+
+				    
+				    '<span style="color: #999999; font-size: 10px;">'+
+					    'Место от: <b style="font-weight: normal;color: #000000; ">400 руб.</b>'+
+				    ''+
+				    ' Номер от: <b style="font-weight: normal;color: #000000;">2000 руб.</b><br/><br/><br/></span>'+
+		    '</div>'+
+			    
+		    '</div>';
+    
+	j++;
+            
+		    data.push([59.93148456030916,30.319862365722656]);
+
+	    all_baloons[j] = '<div style="width: 330px; float:left; clear:both;">'+
+	    
+			    '<div class="hotelava" style="width: 90px; padding-bottom: 10px; float: left;">'+
+				    '<a href="/druzya-na-kazanskaya/" ><img src="/public/images/hotel/8-img_7864.jpg" alt="" border="0"></a>'+
+			    '</div>'+
+				    
+			    
+			    '<div style="width: 230px; padding-bottom: 10px; float: left;">'+
+			    '<div><a href="/druzya-na-kazanskaya/" style="color: #000000; font-size: 16px; padding-bottom: 10px;">Друзья на Казанской</a></div>'+
+			    
+			    '<div class="hoteladdr" style="font-size: 10px; padding-bottom: 10px; color:#989898; display: block;">'+
+				    'Санкт-Петербург, ул. Казанская, 11'+
+		    '</div>'+
+				    '<div class="hotelmenu" style="display: block;">'+
+					    '<a style="font-size: 10px; " href="/druzya-na-kazanskaya/">Описание</a> '+
+					    '<a style="font-size: 10px; " href="/druzya-na-kazanskaya/price/">Номера и цены</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-kazanskaya/location/">Расположение</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-kazanskaya/review/">Отзывы</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-kazanskaya/foto/">Медиа</a> '+	
+					    
+				    '</div>	'+
+			    '</div>'+
+			    '<div style="width: 330px;  clear:both;">'+
+				    '<a style="color:#80689d;font-size:11px;width:90px;float:left;" href="#" onclick="var fparams = {'+
+					    'hotel: \'8\''+
+			    '};'+
+			    'openform(fparams); return false;">Бронировать</a> '+
+				    
+				    '<span style="color: #999999; font-size: 10px;">'+
+				    ' Номер от: <b style="font-weight: normal;color: #000000;">1500 руб.</b><br/><br/><br/></span>'+
+		    '</div>'+
+			    
+		    '</div>';
+    
+	j++;
+            
+		    data.push([59.93180673544821,30.357080697036736]);
+
+	    all_baloons[j] = '<div style="width: 330px; float:left; clear:both;">'+
+	    
+			    '<div class="hotelava" style="width: 90px; padding-bottom: 10px; float: left;">'+
+				    '<a href="/druzya-na-nevskom/" ><img src="/public/images/hotel/3-11.jpg" alt="" border="0"></a>'+
+			    '</div>'+
+				    
+			    
+			    '<div style="width: 230px; padding-bottom: 10px; float: left;">'+
+			    '<div><a href="/druzya-na-nevskom/" style="color: #000000; font-size: 16px; padding-bottom: 10px;">Друзья на Невском</a></div>'+
+			    
+			    '<div class="hoteladdr" style="font-size: 10px; padding-bottom: 10px; color:#989898; display: block;">'+
+				    'Санкт-Петербург, Невский пр., 106'+
+		    '</div>'+
+				    '<div class="hotelmenu" style="display: block;">'+
+					    '<a style="font-size: 10px; " href="/druzya-na-nevskom/">Описание</a> '+
+					    '<a style="font-size: 10px; " href="/druzya-na-nevskom/price/">Номера и цены</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-nevskom/location/">Расположение</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-nevskom/review/">Отзывы</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-nevskom/foto/">Медиа</a> '+	
+					    
+				    '</div>	'+
+			    '</div>'+
+			    '<div style="width: 330px;  clear:both;">'+
+				    '<a style="color:#80689d;font-size:11px;width:90px;float:left;" href="#" onclick="var fparams = {'+
+					    'hotel: \'3\''+
+			    '};'+
+			    'openform(fparams); return false;">Бронировать</a> '+
+				    
+				    '<span style="color: #999999; font-size: 10px;">'+
+					    'Место от: <b style="font-weight: normal;color: #000000; ">400 руб.</b>'+
+				    ''+
+				    ' Номер от: <b style="font-weight: normal;color: #000000;">2000 руб.</b><br/><br/><br/></span>'+
+		    '</div>'+
+			    
+		    '</div>';
+    
+	j++;
+            
+		    data.push([59.937652047104564,30.353373884178154]);
+
+	    all_baloons[j] = '<div style="width: 330px; float:left; clear:both;">'+
+	    
+			    '<div class="hotelava" style="width: 90px; padding-bottom: 10px; float: left;">'+
+				    '<a href="/druzya-na-chehova/" ><img src="/public/images/hotel/4-1-1.jpg" alt="" border="0"></a>'+
+			    '</div>'+
+				    
+			    
+			    '<div style="width: 230px; padding-bottom: 10px; float: left;">'+
+			    '<div><a href="/druzya-na-chehova/" style="color: #000000; font-size: 16px; padding-bottom: 10px;">Друзья на Чехова</a></div>'+
+			    
+			    '<div class="hoteladdr" style="font-size: 10px; padding-bottom: 10px; color:#989898; display: block;">'+
+				    'Санкт-Петербург, ул. Чехова, 11'+
+		    '</div>'+
+				    '<div class="hotelmenu" style="display: block;">'+
+					    '<a style="font-size: 10px; " href="/druzya-na-chehova/">Описание</a> '+
+					    '<a style="font-size: 10px; " href="/druzya-na-chehova/price/">Номера и цены</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-chehova/location/">Расположение</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-chehova/review/">Отзывы</a> '+
+					    '<a style="font-size: 10px; "  href="/druzya-na-chehova/foto/">Медиа</a> '+	
+					    
+				    '</div>	'+
+			    '</div>'+
+			    '<div style="width: 330px;  clear:both;">'+
+				    '<a style="color:#80689d;font-size:11px;width:90px;float:left;" href="#" onclick="var fparams = {'+
+					    'hotel: \'4\''+
+			    '};'+
+			    'openform(fparams); return false;">Бронировать</a> '+
+				    
+				    '<span style="color: #999999; font-size: 10px;">'+
+				    ' Номер от: <b style="font-weight: normal;color: #000000;">2200 руб.</b><br/><br/><br/></span>'+
+		    '</div>'+
+			    
+		    '</div>';
+    
+	j++;
+            
+		    data.push([59.93197875012733,30.323102473236077]);
+
+	    all_baloons[j] = '<div style="width: 330px; float:left; clear:both;">'+
+	    
+			    '<div class="hotelava" style="width: 90px; padding-bottom: 10px; float: left;">'+
+				    '<a href="/kvartira-druzei/" ><img src="/public/images/hotel/5-img_8161.jpg" alt="" border="0"></a>'+
+			    '</div>'+
+				    
+			    
+			    '<div style="width: 230px; padding-bottom: 10px; float: left;">'+
+			    '<div><a href="/kvartira-druzei/" style="color: #000000; font-size: 16px; padding-bottom: 10px;">Квартира Друзей</a></div>'+
+			    
+			    '<div class="hoteladdr" style="font-size: 10px; padding-bottom: 10px; color:#989898; display: block;">'+
+				    'Санкт-Петербург, наб.канала Грибоедова, 33'+
+		    '</div>'+
+				    '<div class="hotelmenu" style="display: block;">'+
+					    '<a style="font-size: 10px; " href="/kvartira-druzei/">Описание</a> '+
+					    '<a style="font-size: 10px; " href="/kvartira-druzei/price/">Номера и цены</a> '+
+					    '<a style="font-size: 10px; "  href="/kvartira-druzei/location/">Расположение</a> '+
+					    '<a style="font-size: 10px; "  href="/kvartira-druzei/review/">Отзывы</a> '+
+					    '<a style="font-size: 10px; "  href="/kvartira-druzei/foto/">Медиа</a> '+	
+					    
+				    '</div>	'+
+			    '</div>'+
+			    '<div style="width: 330px;  clear:both;">'+
+				    '<a style="color:#80689d;font-size:11px;width:90px;float:left;" href="#" onclick="var fparams = {'+
+					    'hotel: \'5\''+
+			    '};'+
+			    'openform(fparams); return false;">Бронировать</a> '+
+				    
+				    '<span style="color: #999999; font-size: 10px;">'+
+				    ' Номер от: <b style="font-weight: normal;color: #000000;">2200 руб.</b><br/><br/><br/></span>'+
+		    '</div>'+
+			    
+		    '</div>';
+    
+	j++;
+            
+	    
+	var zoom="";
+	if ('page'=="kazan") {
+	    var center = new google.maps.LatLng(55.791189,49.116139);
+	      zoom=14;
+	}
+	else if ('page'=="moscow") {
+	    var center = new google.maps.LatLng(55.765549,37.607832);
+	      zoom=13;
+	}
+	else if ('page'=="nijnii_novgorod") {
+	    var center = new google.maps.LatLng(56.324802,43.970976);
+	      zoom=13;
+	}
+	else if ('page'=="kaliningrad") {
+	    var center = new google.maps.LatLng(54.699596,20.508213);
+	      zoom=13;
+	}else if ('page'=="velikii_novgorod") {
+	    var center = new google.maps.LatLng(58.527931,31.255503);
+	      zoom=13;
+	}else if ('page'=="ekaterinburg") {
+	    var center = new google.maps.LatLng(56.846874,60.609341);
+	      zoom=13;
+	}else if ('page'=="yaroslavl") {
+	    var center = new google.maps.LatLng(57.629533,39.859428);
+	      zoom=13;
+	}
+	else if ('page'=="rostov") {
+	    var center = new google.maps.LatLng(47.236274,39.705620);
+	      zoom=13;
+	}
+	else if ('page'=="irkutsk") {
+	    var center = new google.maps.LatLng(52.311801,104.263859);
+	      zoom=13;
+	}
+	
+	else{
+	    var center = new google.maps.LatLng(59.933989460416115,30.336856842041016);
+	      zoom=14;
+	}
+
+        map = new google.maps.Map(document.getElementById('GMaphotels_location'), {
+            zoom: zoom,
+            center: center,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        });
+	
+	
+	var markers = [];
+	var c=0;
+
+        for (var i = 0; i < data.length; i++)
+	{       
+            var latLng = new google.maps.LatLng(data[i][0], data[i][1]);
+            var marker = new google.maps.Marker({
+              position: latLng,
+              icon:"/public/images/design/hotel_on_map.png",
+            });
+            google.maps.event.addListener(marker, 'click', function() {	
+                set_balon_one_marker(this);
+            });            
+            markers.push(marker);
+        }
+        
+	var opt_options={
+		url:"/public/images/design/hotel_on_map2.png",
+		height: 33,
+		width: 38,
+		backgroundPosition:"8px 6px",
+		textSize:"12",
+		textColor:"white",
+		maxZoom : 13,
+		zoomOnClick:false,
+		averageCenter: true
+		
+	}
+	  
+	var infoWindow="";
+	markerCluster = new MarkerClusterer(map, markers,opt_options);
+	
+	array_marker_clastered = [];
+	array_marker_clastered2 = [];
+	
+	google.maps.event.addListener(map, "zoom_changed", function()
+	{
+	    markerCluster.repaint();
+	    //console.log(markerCluster.clusters_[1].markers_);		
+	    for (var i=0;i<markerCluster.clusters_.length;i++) {
+		    array_marker_clastered[i]=[];
+		    array_marker_clastered2 = [];
+		    for (var j=0;j<markerCluster.clusters_[i].markers_.length;j++) {				
+			    array_marker_clastered2.push(markerCluster.clusters_[i].markers_[j]);			
+		    }
+		    array_marker_clastered[i]=array_marker_clastered2;		    
+	    }
+
+	    google.maps.event.addListener(markerCluster, "clusterclick", function (event)
+	    {
+		    
+		baloon_cluster="";			
+		for (var i=0;i<event.markers_.length;i++) {
+		baloon_cluster+="<div >";
+		baloon_cluster+=set_balon_one_claster(event.markers_[i].position.lat(),event.markers_[i].position.lng());
+		baloon_cluster+="</div>";
+		baloon_cluster+="<br/>";
+			}
+		// this dom node will act as wrapper for our content
+		var wrapper = document.createElement("div");
+		
+		// inject markup into the wrapper
+		wrapper.innerHTML = baloon_cluster;
+		
+		// style containing overflow declarations
+		wrapper.className = "map-popup";
+		
+		// fixed height only :P
+		wrapper.style.height = "160px";
+		
+		if (infoWindow!="") {
+				infoWindow.close();
+		}
+		// initialize the window using wrapper node     
+		infoWindow = new google.maps.InfoWindow({content: wrapper});
+		
+		infoWindow.setPosition(event.getCenter());
+		
+		infoWindow.open(map);
+		
+	     
+	    });
+
+	});
+
+    }
+      
+   //Выводит балун для одного кластера.     
+   function set_balon_one_claster(x,y) {
+            var ballon_clust;
+            for (var i=0;i<data.length;i++)
+            {
+                if (x == data[i][0] && y== data[i][1])
+		{
+                    ballon_clust=all_baloons[i];
+                    //console.log(ballon);
+                }		
+            }
+            //console.log(ballon_clust);
+            return ballon_clust;
+      }
+      
+   //Выводит балун для одного маркера.   
+   function set_balon_one_marker(marker)
+   {
+      // console.log('before');
+	 if (infowindow!="") { infowindow.close();}
+	//console.log('after');
+	posLa=marker.getPosition().lat();
+	posLn=marker.getPosition().lng();
+	
+	for (var i=0;i<data.length;i++)
+	{
+	    if (posLa == data[i][0] && posLn == data[i][1])
+	    {
+		ballon=all_baloons[i];
+		//console.log('ballon');
+	    }		
+	}	
+	
+	infowindow = new google.maps.InfoWindow(
+	{ content:ballon,
+	  size: new google.maps.Size(50,50)
+	});
+	//console.log(infowindow);
+	//infowindow.setPosition(new google.maps.LatLng(59.937652047104564, 30.353373884178154));
+	infowindow.open(map,marker);
+		
+	
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+    
+at line:  1175  position  12
+encountered an end tag: script
+at line:  1645  position  4
+encountered some data:  
+			
+
+
+
+	
+
+		
+at line:  1645  position  13
+encountered comment:   Hotellist Start 
+at line:  1652  position  2
+encountered some data:  
+
+at line:  1652  position  26
+at line:  1653  position  0
+	Attributes:
+	 class = hotellist
+encountered some data:  
+			
+at line:  1653  position  23
+encountered comment:   Hotel Start 
+at line:  1654  position  3
+encountered some data:  
+
+at line:  1654  position  23
+at line:  1655  position  0
+	Attributes:
+	 class = hotel
+encountered some data:  
+	
+at line:  1655  position  19
+at line:  1656  position  1
+	Attributes:
+	 class = hotelava
+encountered some data:  
+		
+at line:  1656  position  23
+at line:  1657  position  2
+	Attributes:
+	 href = /druzya-na-bankovskom/
+at line:  1657  position  35
+	Attributes:
+	 src = /public/images/hotel/1-092199_pic_detail2_l.jpeg
+	 alt = 
+encountered an end tag: a
+at line:  1657  position  103
+encountered some data:  
+	
+at line:  1657  position  107
+encountered an end tag: div
+at line:  1658  position  1
+encountered some data:  
+	
+at line:  1658  position  7
+at line:  1659  position  1
+	Attributes:
+	 class = hotelinfo
+encountered some data:  
+		
+at line:  1659  position  24
+at line:  1660  position  2
+	Attributes:
+	 class = hotelname
+encountered some data:  
+			
+at line:  1660  position  25
+at line:  1661  position  3
+	Attributes:
+	 href = /druzya-na-bankovskom/
+encountered some data:  Друзья на Банковском
+at line:  1661  position  36
+encountered an end tag: a
+at line:  1661  position  56
+encountered some data:  
+		
+at line:  1661  position  60
+encountered an end tag: div
+at line:  1662  position  2
+encountered some data:  
+		
+at line:  1662  position  8
+at line:  1663  position  2
+	Attributes:
+	 class = hoteladdr
+encountered some data:  
+			Санкт-Петербург, Банковский пер., д. 3		
+at line:  1663  position  25
+encountered an end tag: div
+at line:  1664  position  43
+encountered some data:  
+		
+at line:  1664  position  49
+at line:  1665  position  2
+	Attributes:
+	 class = hotelmenu
+encountered some data:  
+			
+at line:  1665  position  25
+at line:  1666  position  3
+	Attributes:
+	 href = /druzya-na-bankovskom/
+encountered some data:  Об отеле
+at line:  1666  position  36
+encountered an end tag: a
+at line:  1666  position  44
+encountered some data:  
+			
+at line:  1666  position  48
+at line:  1667  position  3
+	Attributes:
+	 href = /druzya-na-bankovskom/price/
+encountered some data:  Номера и цены
+at line:  1667  position  42
+encountered an end tag: a
+at line:  1667  position  55
+encountered some data:  			
+			
+at line:  1667  position  59
+at line:  1668  position  3
+	Attributes:
+	 href = /druzya-na-bankovskom/location/
+encountered some data:  Расположение
+at line:  1668  position  45
+encountered an end tag: a
+at line:  1668  position  57
+encountered some data:  
+			
+at line:  1668  position  61
+at line:  1669  position  3
+	Attributes:
+	 href = /druzya-na-bankovskom/review/
+encountered some data:  Отзывы
+at line:  1669  position  43
+encountered an end tag: a
+at line:  1669  position  49
+encountered some data:  
+			
+at line:  1669  position  53
+at line:  1670  position  3
+	Attributes:
+	 href = /druzya-na-bankovskom/foto/
+encountered some data:  Фото и видео
+at line:  1670  position  41
+encountered an end tag: a
+at line:  1670  position  53
+encountered some data:  			
+		
+at line:  1670  position  57
+encountered an end tag: div
+at line:  1671  position  2
+encountered some data:  		
+		
+at line:  1671  position  8
+at line:  1672  position  2
+	Attributes:
+	 class = hotelabout
+encountered some data:  
+			
+at line:  1672  position  26
+at line:  1673  position  3
+	Attributes:
+	 class = MsoNormal
+encountered some data:  Отель находится в самом центре Петербурга, в нескольких минутах ходьбы от станций метро Гостиный двор и Сенная площадь. Буквально в двух шагах 
+at line:  1673  position  24
+encountered some data:   Банковский мостик, Казанский собор, Гостиный двор и Невский проспект. Отель отличает веселая атмосфера, доброжелательный персонал, яркий дизайн и идеальное сочетание цены и качества.
+at line:  1673  position  174
+encountered an end tag: p
+at line:  1673  position  357
+encountered some data:  		
+at line:  1673  position  361
+encountered an end tag: div
+at line:  1673  position  363
+encountered some data:  
+		
+			
+		
+at line:  1673  position  369
+at line:  1676  position  2
+	Attributes:
+	 class = hotelprice
+encountered some data:  
+								Место от: 
+at line:  1676  position  26
+at line:  1677  position  18
+encountered some data:  400 руб.
+at line:  1677  position  21
+encountered an end tag: b
+at line:  1677  position  29
+encountered some data:  
+				 Номер от: 
+at line:  1677  position  33
+at line:  1678  position  15
+encountered some data:  1400 руб.
+at line:  1678  position  18
+encountered an end tag: b
+at line:  1678  position  27
+encountered some data:  		
+at line:  1678  position  31
+encountered some data:  
+					
+at line:  1678  position  39
+at line:  1679  position  5
+	Attributes:
+	 class = bronelink
+	 href = #
+	 onclick = var fparams = {
+				hotel: '1',
+				persons: '2',
+				datein: '17/09/2013',
+				dateout: '19/09/2013'
+			};
+			openform(fparams); return false;
+encountered some data:  Бронировать
+at line:  1685  position  37
+encountered an end tag: a
+at line:  1685  position  48
+encountered some data:  
+					
+at line:  1685  position  52
+encountered an end tag: div
+at line:  1686  position  5
+encountered some data:  
+	
+at line:  1686  position  11
+encountered an end tag: div
+at line:  1687  position  1
+encountered some data:  
+
+at line:  1687  position  7
+encountered an end tag: div
+at line:  1688  position  0
+encountered some data:  
+
+at line:  1688  position  6
+encountered comment:   Hotel Stop 
+at line:  1689  position  0
+encountered some data:  
+		
+at line:  1689  position  19
+encountered comment:   Hotel Start 
+at line:  1690  position  2
+encountered some data:  
+
+at line:  1690  position  22
+at line:  1691  position  0
+	Attributes:
+	 class = hotel
+encountered some data:  
+	
+at line:  1691  position  19
+at line:  1692  position  1
+	Attributes:
+	 class = hotelava
+encountered some data:  
+		
+at line:  1692  position  23
+at line:  1693  position  2
+	Attributes:
+	 href = /druzya-na-vosstaniya/
+at line:  1693  position  35
+	Attributes:
+	 src = /public/images/hotel/7-img_5202-edit.jpg
+	 alt = 
+encountered an end tag: a
+at line:  1693  position  95
+encountered some data:  
+	
+at line:  1693  position  99
+encountered an end tag: div
+at line:  1694  position  1
+encountered some data:  
+	
+at line:  1694  position  7
+at line:  1695  position  1
+	Attributes:
+	 class = hotelinfo
+encountered some data:  
+		
+at line:  1695  position  24
+at line:  1696  position  2
+	Attributes:
+	 class = hotelname
+encountered some data:  
+			
+at line:  1696  position  25
+at line:  1697  position  3
+	Attributes:
+	 href = /druzya-na-vosstaniya/
+encountered some data:  Друзья на Восстания
+at line:  1697  position  36
+encountered an end tag: a
+at line:  1697  position  55
+encountered some data:  
+		
+at line:  1697  position  59
+encountered an end tag: div
+at line:  1698  position  2
+encountered some data:  
+		
+at line:  1698  position  8
+at line:  1699  position  2
+	Attributes:
+	 class = hoteladdr
+encountered some data:  
+			Санкт-Петербург, ул. Восстания, д. 11		
+at line:  1699  position  25
+encountered an end tag: div
+at line:  1700  position  42
+encountered some data:  
+		
+at line:  1700  position  48
+at line:  1701  position  2
+	Attributes:
+	 class = hotelmenu
+encountered some data:  
+			
+at line:  1701  position  25
+at line:  1702  position  3
+	Attributes:
+	 href = /druzya-na-vosstaniya/
+encountered some data:  Об отеле
+at line:  1702  position  36
+encountered an end tag: a
+at line:  1702  position  44
+encountered some data:  
+			
+at line:  1702  position  48
+at line:  1703  position  3
+	Attributes:
+	 href = /druzya-na-vosstaniya/price/
+encountered some data:  Номера и цены
+at line:  1703  position  42
+encountered an end tag: a
+at line:  1703  position  55
+encountered some data:  			
+			
+at line:  1703  position  59
+at line:  1704  position  3
+	Attributes:
+	 href = /druzya-na-vosstaniya/location/
+encountered some data:  Расположение
+at line:  1704  position  45
+encountered an end tag: a
+at line:  1704  position  57
+encountered some data:  
+			
+at line:  1704  position  61
+at line:  1705  position  3
+	Attributes:
+	 href = /druzya-na-vosstaniya/review/
+encountered some data:  Отзывы
+at line:  1705  position  43
+encountered an end tag: a
+at line:  1705  position  49
+encountered some data:  
+			
+at line:  1705  position  53
+at line:  1706  position  3
+	Attributes:
+	 href = /druzya-na-vosstaniya/foto/
+encountered some data:  Фото и видео
+at line:  1706  position  41
+encountered an end tag: a
+at line:  1706  position  53
+encountered some data:  			
+		
+at line:  1706  position  57
+encountered an end tag: div
+at line:  1707  position  2
+encountered some data:  		
+		
+at line:  1707  position  8
+at line:  1708  position  2
+	Attributes:
+	 class = hotelabout
+encountered some data:  
+			
+at line:  1708  position  26
+at line:  1709  position  3
+encountered some data:  Новый и самый большой отель и хостел в Петербурге! "Друзья на Восстания" могут похвастаться не только удобным расположением - рядом с Московским вокзалом и Невским проспектом, но и великолепным соотношением цена-качество, а возможность разместиться в многоместных номерах, делает отдых здесь наиболее экономичным.
+at line:  1709  position  6
+encountered an end tag: p
+at line:  1709  position  319
+encountered some data:  		
+at line:  1709  position  323
+encountered an end tag: div
+at line:  1709  position  325
+encountered some data:  
+		
+			
+		
+at line:  1709  position  331
+at line:  1712  position  2
+	Attributes:
+	 class = hotelprice
+encountered some data:  
+								Место от: 
+at line:  1712  position  26
+at line:  1713  position  18
+encountered some data:  400 руб.
+at line:  1713  position  21
+encountered an end tag: b
+at line:  1713  position  29
+encountered some data:  
+				 Номер от: 
+at line:  1713  position  33
+at line:  1714  position  15
+encountered some data:  1800 руб.
+at line:  1714  position  18
+encountered an end tag: b
+at line:  1714  position  27
+encountered some data:  		
+at line:  1714  position  31
+encountered some data:  
+					
+at line:  1714  position  39
+at line:  1715  position  5
+	Attributes:
+	 class = bronelink
+	 href = #
+	 onclick = var fparams = {
+				hotel: '7',
+				persons: '2',
+				datein: '17/09/2013',
+				dateout: '19/09/2013'
+			};
+			openform(fparams); return false;
+encountered some data:  Бронировать
+at line:  1721  position  37
+encountered an end tag: a
+at line:  1721  position  48
+encountered some data:  
+					
+at line:  1721  position  52
+encountered an end tag: div
+at line:  1722  position  5
+encountered some data:  
+	
+at line:  1722  position  11
+encountered an end tag: div
+at line:  1723  position  1
+encountered some data:  
+
+at line:  1723  position  7
+encountered an end tag: div
+at line:  1724  position  0
+encountered some data:  
+
+at line:  1724  position  6
+encountered comment:   Hotel Stop 
+at line:  1725  position  0
+encountered some data:  
+		
+at line:  1725  position  19
+encountered comment:   Hotel Start 
+at line:  1726  position  2
+encountered some data:  
+
+at line:  1726  position  22
+at line:  1727  position  0
+	Attributes:
+	 class = hotel
+encountered some data:  
+	
+at line:  1727  position  19
+at line:  1728  position  1
+	Attributes:
+	 class = hotelava
+encountered some data:  
+		
+at line:  1728  position  23
+at line:  1729  position  2
+	Attributes:
+	 href = /druzya-na-griboedova/
+at line:  1729  position  35
+	Attributes:
+	 src = /public/images/hotel/2-111.jpg
+	 alt = 
+encountered an end tag: a
+at line:  1729  position  85
+encountered some data:  
+	
+at line:  1729  position  89
+encountered an end tag: div
+at line:  1730  position  1
+encountered some data:  
+	
+at line:  1730  position  7
+at line:  1731  position  1
+	Attributes:
+	 class = hotelinfo
+encountered some data:  
+		
+at line:  1731  position  24
+at line:  1732  position  2
+	Attributes:
+	 class = hotelname
+encountered some data:  
+			
+at line:  1732  position  25
+at line:  1733  position  3
+	Attributes:
+	 href = /druzya-na-griboedova/
+encountered some data:  Друзья на Грибоедова
+at line:  1733  position  36
+encountered an end tag: a
+at line:  1733  position  56
+encountered some data:  
+		
+at line:  1733  position  60
+encountered an end tag: div
+at line:  1734  position  2
+encountered some data:  
+		
+at line:  1734  position  8
+at line:  1735  position  2
+	Attributes:
+	 class = hoteladdr
+encountered some data:  
+			Санкт-Петербург, наб. канала Грибоедова, 20		
+at line:  1735  position  25
+encountered an end tag: div
+at line:  1736  position  48
+encountered some data:  
+		
+at line:  1736  position  54
+at line:  1737  position  2
+	Attributes:
+	 class = hotelmenu
+encountered some data:  
+			
+at line:  1737  position  25
+at line:  1738  position  3
+	Attributes:
+	 href = /druzya-na-griboedova/
+encountered some data:  Об отеле
+at line:  1738  position  36
+encountered an end tag: a
+at line:  1738  position  44
+encountered some data:  
+			
+at line:  1738  position  48
+at line:  1739  position  3
+	Attributes:
+	 href = /druzya-na-griboedova/price/
+encountered some data:  Номера и цены
+at line:  1739  position  42
+encountered an end tag: a
+at line:  1739  position  55
+encountered some data:  			
+			
+at line:  1739  position  59
+at line:  1740  position  3
+	Attributes:
+	 href = /druzya-na-griboedova/location/
+encountered some data:  Расположение
+at line:  1740  position  45
+encountered an end tag: a
+at line:  1740  position  57
+encountered some data:  
+			
+at line:  1740  position  61
+at line:  1741  position  3
+	Attributes:
+	 href = /druzya-na-griboedova/review/
+encountered some data:  Отзывы
+at line:  1741  position  43
+encountered an end tag: a
+at line:  1741  position  49
+encountered some data:  
+			
+at line:  1741  position  53
+at line:  1742  position  3
+	Attributes:
+	 href = /druzya-na-griboedova/foto/
+encountered some data:  Фото и видео
+at line:  1742  position  41
+encountered an end tag: a
+at line:  1742  position  53
+encountered some data:  			
+		
+at line:  1742  position  57
+encountered an end tag: div
+at line:  1743  position  2
+encountered some data:  		
+		
+at line:  1743  position  8
+at line:  1744  position  2
+	Attributes:
+	 class = hotelabout
+encountered some data:  
+			
+at line:  1744  position  26
+at line:  1745  position  3
+encountered some data:  Если можно назвать место в самом центре Петербурга, то это, скорее всего будет пересечение Невского проспекта и канала Грибоедова. Наш очередной отель и хостел в СПб открылся именно здесь в конце апреля 2011 года. Сейчас в отеле 39 комнат. В "Друзьях на Грибоедова" есть как многоместные, так и отдельные номера. Некоторые из них имеют потрясающий вид на Казанский собор, которому позавидует любой пятизвездочный отель!
+at line:  1745  position  6
+encountered an end tag: p
+at line:  1745  position  425
+encountered some data:  		
+at line:  1745  position  429
+encountered an end tag: div
+at line:  1745  position  431
+encountered some data:  
+		
+			
+		
+at line:  1745  position  437
+at line:  1748  position  2
+	Attributes:
+	 class = hotelprice
+encountered some data:  
+								Место от: 
+at line:  1748  position  26
+at line:  1749  position  18
+encountered some data:  500 руб.
+at line:  1749  position  21
+encountered an end tag: b
+at line:  1749  position  29
+encountered some data:  
+				 Номер от: 
+at line:  1749  position  33
+at line:  1750  position  15
+encountered some data:  1600 руб.
+at line:  1750  position  18
+encountered an end tag: b
+at line:  1750  position  27
+encountered some data:  		
+at line:  1750  position  31
+encountered some data:  
+					
+at line:  1750  position  39
+at line:  1751  position  5
+	Attributes:
+	 class = bronelink
+	 href = #
+	 onclick = var fparams = {
+				hotel: '2',
+				persons: '2',
+				datein: '17/09/2013',
+				dateout: '19/09/2013'
+			};
+			openform(fparams); return false;
+encountered some data:  Бронировать
+at line:  1757  position  37
+encountered an end tag: a
+at line:  1757  position  48
+encountered some data:  
+					
+at line:  1757  position  52
+encountered an end tag: div
+at line:  1758  position  5
+encountered some data:  
+	
+at line:  1758  position  11
+encountered an end tag: div
+at line:  1759  position  1
+encountered some data:  
+
+at line:  1759  position  7
+encountered an end tag: div
+at line:  1760  position  0
+encountered some data:  
+
+at line:  1760  position  6
+encountered comment:   Hotel Stop 
+at line:  1761  position  0
+encountered some data:  
+		
+at line:  1761  position  19
+encountered comment:   Hotel Start 
+at line:  1762  position  2
+encountered some data:  
+
+at line:  1762  position  22
+at line:  1763  position  0
+	Attributes:
+	 class = hotel
+encountered some data:  
+	
+at line:  1763  position  19
+at line:  1764  position  1
+	Attributes:
+	 class = hotelava
+encountered some data:  
+		
+at line:  1764  position  23
+at line:  1765  position  2
+	Attributes:
+	 href = /druzya-na-kazanskaya/
+at line:  1765  position  35
+	Attributes:
+	 src = /public/images/hotel/8-img_7864.jpg
+	 alt = 
+encountered an end tag: a
+at line:  1765  position  90
+encountered some data:  
+	
+at line:  1765  position  94
+encountered an end tag: div
+at line:  1766  position  1
+encountered some data:  
+	
+at line:  1766  position  7
+at line:  1767  position  1
+	Attributes:
+	 class = hotelinfo
+encountered some data:  
+		
+at line:  1767  position  24
+at line:  1768  position  2
+	Attributes:
+	 class = hotelname
+encountered some data:  
+			
+at line:  1768  position  25
+at line:  1769  position  3
+	Attributes:
+	 href = /druzya-na-kazanskaya/
+encountered some data:  Друзья на Казанской
+at line:  1769  position  36
+encountered an end tag: a
+at line:  1769  position  55
+encountered some data:  
+		
+at line:  1769  position  59
+encountered an end tag: div
+at line:  1770  position  2
+encountered some data:  
+		
+at line:  1770  position  8
+at line:  1771  position  2
+	Attributes:
+	 class = hoteladdr
+encountered some data:  
+			Санкт-Петербург, ул. Казанская, 11		
+at line:  1771  position  25
+encountered an end tag: div
+at line:  1772  position  39
+encountered some data:  
+		
+at line:  1772  position  45
+at line:  1773  position  2
+	Attributes:
+	 class = hotelmenu
+encountered some data:  
+			
+at line:  1773  position  25
+at line:  1774  position  3
+	Attributes:
+	 href = /druzya-na-kazanskaya/
+encountered some data:  Об отеле
+at line:  1774  position  36
+encountered an end tag: a
+at line:  1774  position  44
+encountered some data:  
+			
+at line:  1774  position  48
+at line:  1775  position  3
+	Attributes:
+	 href = /druzya-na-kazanskaya/price/
+encountered some data:  Номера и цены
+at line:  1775  position  42
+encountered an end tag: a
+at line:  1775  position  55
+encountered some data:  			
+			
+at line:  1775  position  59
+at line:  1776  position  3
+	Attributes:
+	 href = /druzya-na-kazanskaya/location/
+encountered some data:  Расположение
+at line:  1776  position  45
+encountered an end tag: a
+at line:  1776  position  57
+encountered some data:  
+			
+at line:  1776  position  61
+at line:  1777  position  3
+	Attributes:
+	 href = /druzya-na-kazanskaya/review/
+encountered some data:  Отзывы
+at line:  1777  position  43
+encountered an end tag: a
+at line:  1777  position  49
+encountered some data:  
+			
+at line:  1777  position  53
+at line:  1778  position  3
+	Attributes:
+	 href = /druzya-na-kazanskaya/foto/
+encountered some data:  Фото и видео
+at line:  1778  position  41
+encountered an end tag: a
+at line:  1778  position  53
+encountered some data:  			
+		
+at line:  1778  position  57
+encountered an end tag: div
+at line:  1779  position  2
+encountered some data:  		
+		
+at line:  1779  position  8
+at line:  1780  position  2
+	Attributes:
+	 class = hotelabout
+encountered some data:  
+			
+at line:  1780  position  26
+at line:  1781  position  3
+encountered some data:  Новый в строю "Друзей" - отель "Друзья на Казанской", отличается домашней атмосферой и особым уютом. Интерьеры отеля выполненые в стиле ретро, прекрасно передают дух квартиры, расположенной в историческом центре Петербурга. Двенадцать двухместных номеров готовы принять своих гостей!
+at line:  1781  position  6
+encountered an end tag: p
+at line:  1781  position  289
+encountered some data:  		
+at line:  1781  position  293
+encountered an end tag: div
+at line:  1781  position  295
+encountered some data:  
+		
+			
+		
+at line:  1781  position  301
+at line:  1784  position  2
+	Attributes:
+	 class = hotelprice
+encountered some data:  
+							 Номер от: 
+at line:  1784  position  26
+at line:  1785  position  18
+encountered some data:  1200 руб.
+at line:  1785  position  21
+encountered an end tag: b
+at line:  1785  position  30
+encountered some data:  		
+at line:  1785  position  34
+encountered some data:  
+					
+at line:  1785  position  42
+at line:  1786  position  5
+	Attributes:
+	 class = bronelink
+	 href = #
+	 onclick = var fparams = {
+				hotel: '8',
+				persons: '2',
+				datein: '17/09/2013',
+				dateout: '19/09/2013'
+			};
+			openform(fparams); return false;
+encountered some data:  Бронировать
+at line:  1792  position  37
+encountered an end tag: a
+at line:  1792  position  48
+encountered some data:  
+					
+at line:  1792  position  52
+encountered an end tag: div
+at line:  1793  position  5
+encountered some data:  
+	
+at line:  1793  position  11
+encountered an end tag: div
+at line:  1794  position  1
+encountered some data:  
+
+at line:  1794  position  7
+encountered an end tag: div
+at line:  1795  position  0
+encountered some data:  
+
+at line:  1795  position  6
+encountered comment:   Hotel Stop 
+at line:  1796  position  0
+encountered some data:  
+		
+at line:  1796  position  19
+encountered comment:   Hotel Start 
+at line:  1797  position  2
+encountered some data:  
+
+at line:  1797  position  22
+at line:  1798  position  0
+	Attributes:
+	 class = hotel
+encountered some data:  
+	
+at line:  1798  position  19
+at line:  1799  position  1
+	Attributes:
+	 class = hotelava
+encountered some data:  
+		
+at line:  1799  position  23
+at line:  1800  position  2
+	Attributes:
+	 href = /druzya-na-nevskom/
+at line:  1800  position  32
+	Attributes:
+	 src = /public/images/hotel/3-11.jpg
+	 alt = 
+encountered an end tag: a
+at line:  1800  position  81
+encountered some data:  
+	
+at line:  1800  position  85
+encountered an end tag: div
+at line:  1801  position  1
+encountered some data:  
+	
+at line:  1801  position  7
+at line:  1802  position  1
+	Attributes:
+	 class = hotelinfo
+encountered some data:  
+		
+at line:  1802  position  24
+at line:  1803  position  2
+	Attributes:
+	 class = hotelname
+encountered some data:  
+			
+at line:  1803  position  25
+at line:  1804  position  3
+	Attributes:
+	 href = /druzya-na-nevskom/
+encountered some data:  Друзья на Невском
+at line:  1804  position  33
+encountered an end tag: a
+at line:  1804  position  50
+encountered some data:  
+		
+at line:  1804  position  54
+encountered an end tag: div
+at line:  1805  position  2
+encountered some data:  
+		
+at line:  1805  position  8
+at line:  1806  position  2
+	Attributes:
+	 class = hoteladdr
+encountered some data:  
+			Санкт-Петербург, Невский пр., 106		
+at line:  1806  position  25
+encountered an end tag: div
+at line:  1807  position  38
+encountered some data:  
+		
+at line:  1807  position  44
+at line:  1808  position  2
+	Attributes:
+	 class = hotelmenu
+encountered some data:  
+			
+at line:  1808  position  25
+at line:  1809  position  3
+	Attributes:
+	 href = /druzya-na-nevskom/
+encountered some data:  Об отеле
+at line:  1809  position  33
+encountered an end tag: a
+at line:  1809  position  41
+encountered some data:  
+			
+at line:  1809  position  45
+at line:  1810  position  3
+	Attributes:
+	 href = /druzya-na-nevskom/price/
+encountered some data:  Номера и цены
+at line:  1810  position  39
+encountered an end tag: a
+at line:  1810  position  52
+encountered some data:  			
+			
+at line:  1810  position  56
+at line:  1811  position  3
+	Attributes:
+	 href = /druzya-na-nevskom/location/
+encountered some data:  Расположение
+at line:  1811  position  42
+encountered an end tag: a
+at line:  1811  position  54
+encountered some data:  
+			
+at line:  1811  position  58
+at line:  1812  position  3
+	Attributes:
+	 href = /druzya-na-nevskom/review/
+encountered some data:  Отзывы
+at line:  1812  position  40
+encountered an end tag: a
+at line:  1812  position  46
+encountered some data:  
+			
+at line:  1812  position  50
+at line:  1813  position  3
+	Attributes:
+	 href = /druzya-na-nevskom/foto/
+encountered some data:  Фото и видео
+at line:  1813  position  38
+encountered an end tag: a
+at line:  1813  position  50
+encountered some data:  			
+		
+at line:  1813  position  54
+encountered an end tag: div
+at line:  1814  position  2
+encountered some data:  		
+		
+at line:  1814  position  8
+at line:  1815  position  2
+	Attributes:
+	 class = hotelabout
+encountered some data:  
+			
+at line:  1815  position  26
+at line:  1816  position  3
+encountered some data:  Это наш самый первый хостел в Санкт-Петербурге. Оцените преимущества жизни в самом центре Петербурга, в непосредственной близости от Московского вокзала. У Друзей можно отдохнуть с дороги, набравшись сил для пеших прогулок по городу и посещения основных музеев. Все они - очень близко!
+at line:  1816  position  6
+encountered an end tag: p
+at line:  1816  position  291
+encountered some data:  		
+at line:  1816  position  295
+encountered an end tag: div
+at line:  1816  position  297
+encountered some data:  
+		
+			
+		
+at line:  1816  position  303
+at line:  1819  position  2
+	Attributes:
+	 class = hotelprice
+encountered some data:  
+								Место от: 
+at line:  1819  position  26
+at line:  1820  position  18
+encountered some data:  600 руб.
+at line:  1820  position  21
+encountered an end tag: b
+at line:  1820  position  29
+encountered some data:  
+				 Номер от: 
+at line:  1820  position  33
+at line:  1821  position  15
+encountered some data:  1200 руб.
+at line:  1821  position  18
+encountered an end tag: b
+at line:  1821  position  27
+encountered some data:  		
+at line:  1821  position  31
+encountered some data:  
+					
+at line:  1821  position  39
+at line:  1822  position  5
+	Attributes:
+	 class = bronelink
+	 href = #
+	 onclick = var fparams = {
+				hotel: '3',
+				persons: '2',
+				datein: '17/09/2013',
+				dateout: '19/09/2013'
+			};
+			openform(fparams); return false;
+encountered some data:  Бронировать
+at line:  1828  position  37
+encountered an end tag: a
+at line:  1828  position  48
+encountered some data:  
+					
+at line:  1828  position  52
+encountered an end tag: div
+at line:  1829  position  5
+encountered some data:  
+	
+at line:  1829  position  11
+encountered an end tag: div
+at line:  1830  position  1
+encountered some data:  
+
+at line:  1830  position  7
+encountered an end tag: div
+at line:  1831  position  0
+encountered some data:  
+
+at line:  1831  position  6
+encountered comment:   Hotel Stop 
+at line:  1832  position  0
+encountered some data:  
+		
+at line:  1832  position  19
+encountered comment:   Hotel Start 
+at line:  1833  position  2
+encountered some data:  
+
+at line:  1833  position  22
+at line:  1834  position  0
+	Attributes:
+	 class = hotel
+encountered some data:  
+	
+at line:  1834  position  19
+at line:  1835  position  1
+	Attributes:
+	 class = hotelava
+encountered some data:  
+		
+at line:  1835  position  23
+at line:  1836  position  2
+	Attributes:
+	 href = /druzya-na-chehova/
+at line:  1836  position  32
+	Attributes:
+	 src = /public/images/hotel/4-1-1.jpg
+	 alt = 
+encountered an end tag: a
+at line:  1836  position  82
+encountered some data:  
+	
+at line:  1836  position  86
+encountered an end tag: div
+at line:  1837  position  1
+encountered some data:  
+	
+at line:  1837  position  7
+at line:  1838  position  1
+	Attributes:
+	 class = hotelinfo
+encountered some data:  
+		
+at line:  1838  position  24
+at line:  1839  position  2
+	Attributes:
+	 class = hotelname
+encountered some data:  
+			
+at line:  1839  position  25
+at line:  1840  position  3
+	Attributes:
+	 href = /druzya-na-chehova/
+encountered some data:  Друзья на Чехова
+at line:  1840  position  33
+encountered an end tag: a
+at line:  1840  position  49
+encountered some data:  
+		
+at line:  1840  position  53
+encountered an end tag: div
+at line:  1841  position  2
+encountered some data:  
+		
+at line:  1841  position  8
+at line:  1842  position  2
+	Attributes:
+	 class = hoteladdr
+encountered some data:  
+			Санкт-Петербург, ул. Чехова, 11		
+at line:  1842  position  25
+encountered an end tag: div
+at line:  1843  position  36
+encountered some data:  
+		
+at line:  1843  position  42
+at line:  1844  position  2
+	Attributes:
+	 class = hotelmenu
+encountered some data:  
+			
+at line:  1844  position  25
+at line:  1845  position  3
+	Attributes:
+	 href = /druzya-na-chehova/
+encountered some data:  Об отеле
+at line:  1845  position  33
+encountered an end tag: a
+at line:  1845  position  41
+encountered some data:  
+			
+at line:  1845  position  45
+at line:  1846  position  3
+	Attributes:
+	 href = /druzya-na-chehova/price/
+encountered some data:  Номера и цены
+at line:  1846  position  39
+encountered an end tag: a
+at line:  1846  position  52
+encountered some data:  			
+			
+at line:  1846  position  56
+at line:  1847  position  3
+	Attributes:
+	 href = /druzya-na-chehova/location/
+encountered some data:  Расположение
+at line:  1847  position  42
+encountered an end tag: a
+at line:  1847  position  54
+encountered some data:  
+			
+at line:  1847  position  58
+at line:  1848  position  3
+	Attributes:
+	 href = /druzya-na-chehova/review/
+encountered some data:  Отзывы
+at line:  1848  position  40
+encountered an end tag: a
+at line:  1848  position  46
+encountered some data:  
+			
+at line:  1848  position  50
+at line:  1849  position  3
+	Attributes:
+	 href = /druzya-na-chehova/foto/
+encountered some data:  Фото и видео
+at line:  1849  position  38
+encountered an end tag: a
+at line:  1849  position  50
+encountered some data:  			
+		
+at line:  1849  position  54
+encountered an end tag: div
+at line:  1850  position  2
+encountered some data:  		
+		
+at line:  1850  position  8
+at line:  1851  position  2
+	Attributes:
+	 class = hotelabout
+encountered some data:  
+			
+at line:  1851  position  26
+at line:  1852  position  3
+encountered some data:  Отличный выбор для тех, кто хочет жить в центре города, но не готов мириться с шумом основных магистралей. Пожалуй, это самый укромный уголок Друзей. Впрочем, все самое важное в Санкт-Петербурге - неизменно рядом!
+at line:  1852  position  6
+encountered an end tag: p
+at line:  1852  position  219
+encountered some data:  
+
+
+at line:  1852  position  223
+at line:  1854  position  0
+at line:  1854  position  3
+	Attributes:
+	 href = ../../../../druzya-na-chehova/price/
+encountered some data:  СКИДКИ с 1 по 14 июля!
+at line:  1854  position  50
+encountered an end tag: a
+at line:  1854  position  72
+encountered an end tag: p
+at line:  1854  position  76
+encountered some data:  		
+at line:  1854  position  80
+encountered an end tag: div
+at line:  1854  position  82
+encountered some data:  
+		
+			
+		
+at line:  1854  position  88
+at line:  1857  position  2
+	Attributes:
+	 class = hotelprice
+encountered some data:  
+							 Номер от: 
+at line:  1857  position  26
+at line:  1858  position  18
+encountered some data:  1500 руб.
+at line:  1858  position  21
+encountered an end tag: b
+at line:  1858  position  30
+encountered some data:  		
+at line:  1858  position  34
+encountered some data:  
+					
+at line:  1858  position  42
+at line:  1859  position  5
+	Attributes:
+	 class = bronelink
+	 href = #
+	 onclick = var fparams = {
+				hotel: '4',
+				persons: '2',
+				datein: '17/09/2013',
+				dateout: '19/09/2013'
+			};
+			openform(fparams); return false;
+encountered some data:  Бронировать
+at line:  1865  position  37
+encountered an end tag: a
+at line:  1865  position  48
+encountered some data:  
+					
+at line:  1865  position  52
+encountered an end tag: div
+at line:  1866  position  5
+encountered some data:  
+	
+at line:  1866  position  11
+encountered an end tag: div
+at line:  1867  position  1
+encountered some data:  
+
+at line:  1867  position  7
+encountered an end tag: div
+at line:  1868  position  0
+encountered some data:  
+
+at line:  1868  position  6
+encountered comment:   Hotel Stop 
+at line:  1869  position  0
+encountered some data:  
+		
+at line:  1869  position  19
+encountered comment:   Hotel Start 
+at line:  1870  position  2
+encountered some data:  
+
+at line:  1870  position  22
+at line:  1871  position  0
+	Attributes:
+	 class = hotel
+encountered some data:  
+	
+at line:  1871  position  19
+at line:  1872  position  1
+	Attributes:
+	 class = hotelava
+encountered some data:  
+		
+at line:  1872  position  23
+at line:  1873  position  2
+	Attributes:
+	 href = /kvartira-druzei/
+at line:  1873  position  30
+	Attributes:
+	 src = /public/images/hotel/5-img_8161.jpg
+	 alt = 
+encountered an end tag: a
+at line:  1873  position  85
+encountered some data:  
+	
+at line:  1873  position  89
+encountered an end tag: div
+at line:  1874  position  1
+encountered some data:  
+	
+at line:  1874  position  7
+at line:  1875  position  1
+	Attributes:
+	 class = hotelinfo
+encountered some data:  
+		
+at line:  1875  position  24
+at line:  1876  position  2
+	Attributes:
+	 class = hotelname
+encountered some data:  
+			
+at line:  1876  position  25
+at line:  1877  position  3
+	Attributes:
+	 href = /kvartira-druzei/
+encountered some data:  Квартира Друзей
+at line:  1877  position  31
+encountered an end tag: a
+at line:  1877  position  46
+encountered some data:  
+		
+at line:  1877  position  50
+encountered an end tag: div
+at line:  1878  position  2
+encountered some data:  
+		
+at line:  1878  position  8
+at line:  1879  position  2
+	Attributes:
+	 class = hoteladdr
+encountered some data:  
+			Санкт-Петербург, наб.канала Грибоедова, 33		
+at line:  1879  position  25
+encountered an end tag: div
+at line:  1880  position  47
+encountered some data:  
+		
+at line:  1880  position  53
+at line:  1881  position  2
+	Attributes:
+	 class = hotelmenu
+encountered some data:  
+			
+at line:  1881  position  25
+at line:  1882  position  3
+	Attributes:
+	 href = /kvartira-druzei/
+encountered some data:  Об отеле
+at line:  1882  position  31
+encountered an end tag: a
+at line:  1882  position  39
+encountered some data:  
+			
+at line:  1882  position  43
+at line:  1883  position  3
+	Attributes:
+	 href = /kvartira-druzei/price/
+encountered some data:  Номера и цены
+at line:  1883  position  37
+encountered an end tag: a
+at line:  1883  position  50
+encountered some data:  			
+			
+at line:  1883  position  54
+at line:  1884  position  3
+	Attributes:
+	 href = /kvartira-druzei/location/
+encountered some data:  Расположение
+at line:  1884  position  40
+encountered an end tag: a
+at line:  1884  position  52
+encountered some data:  
+			
+at line:  1884  position  56
+at line:  1885  position  3
+	Attributes:
+	 href = /kvartira-druzei/review/
+encountered some data:  Отзывы
+at line:  1885  position  38
+encountered an end tag: a
+at line:  1885  position  44
+encountered some data:  
+			
+at line:  1885  position  48
+at line:  1886  position  3
+	Attributes:
+	 href = /kvartira-druzei/foto/
+encountered some data:  Фото и видео
+at line:  1886  position  36
+encountered an end tag: a
+at line:  1886  position  48
+encountered some data:  			
+		
+at line:  1886  position  52
+encountered an end tag: div
+at line:  1887  position  2
+encountered some data:  		
+		
+at line:  1887  position  8
+at line:  1888  position  2
+	Attributes:
+	 class = hotelabout
+encountered some data:  
+			
+at line:  1888  position  26
+at line:  1889  position  3
+encountered some data:  Хотите уединения? К вашим услугам два уютных двухместных номера с раздельными кроватями, которые, впрочем, можно сдвинуть, получив двуспальную кровать. Интереснейшие места Петербурга находятся совсем близко к "Квартире друзей". Приятных прогулок!
+at line:  1889  position  6
+encountered an end tag: p
+at line:  1889  position  252
+encountered some data:  		
+at line:  1889  position  256
+encountered an end tag: div
+at line:  1889  position  258
+encountered some data:  
+		
+			
+		
+at line:  1889  position  264
+at line:  1892  position  2
+	Attributes:
+	 class = hotelprice
+encountered some data:  
+							 Номер от: 
+at line:  1892  position  26
+at line:  1893  position  18
+encountered some data:  1800 руб.
+at line:  1893  position  21
+encountered an end tag: b
+at line:  1893  position  30
+encountered some data:  		
+at line:  1893  position  34
+encountered some data:  
+					
+at line:  1893  position  42
+at line:  1894  position  5
+	Attributes:
+	 class = bronelink
+	 href = #
+	 onclick = var fparams = {
+				hotel: '5',
+				persons: '2',
+				datein: '17/09/2013',
+				dateout: '19/09/2013'
+			};
+			openform(fparams); return false;
+encountered some data:  Бронировать
+at line:  1900  position  37
+encountered an end tag: a
+at line:  1900  position  48
+encountered some data:  
+					
+at line:  1900  position  52
+encountered an end tag: div
+at line:  1901  position  5
+encountered some data:  
+	
+at line:  1901  position  11
+encountered an end tag: div
+at line:  1902  position  1
+encountered some data:  
+
+at line:  1902  position  7
+encountered an end tag: div
+at line:  1903  position  0
+encountered some data:  
+
+at line:  1903  position  6
+encountered comment:   Hotel Stop 
+at line:  1904  position  0
+encountered some data:  
+	
+at line:  1904  position  19
+encountered an end tag: div
+at line:  1905  position  1
+encountered some data:  
+
+at line:  1905  position  7
+encountered comment:   Hotellist Stop 
+at line:  1906  position  0
+encountered some data:  
+	
+
+	
+
+	
+at line:  1906  position  23
+at line:  1911  position  1
+	Attributes:
+	 class = indexsubtext
+encountered some data:  
+
+		
+at line:  1911  position  27
+at line:  1913  position  2
+encountered some data:  Хостелы "Друзья" в Санкт-Петербурге
+at line:  1913  position  6
+encountered an end tag: h1
+at line:  1913  position  41
+encountered some data:  
+
+		
+at line:  1913  position  46
+at line:  1915  position  2
+encountered some data:  
+
+																		   
+at line:  1915  position  7
+at line:  1917  position  21
+	Attributes:
+	 class = elemtext
+encountered some data:  
+
+		
+at line:  1917  position  43
+at line:  1919  position  2
+encountered some data:  Добро пожаловать в 
+at line:  1919  position  5
+encountered some data:  Друзья
+at line:  1919  position  31
+encountered some data:   - молодежные 
+at line:  1919  position  44
+at line:  1919  position  58
+encountered some data:  хостелы Санкт-Петербурга
+at line:  1919  position  66
+encountered an end tag: strong
+at line:  1919  position  90
+encountered some data:  , созданные путешественниками для путешественников! Мы не будем долго петь себе дифирамбы, а просто расскажем правду о нас, сети недорогих хостелов. Для начала, небольшая разминка "Найдите лишнее": уют, теплая атмосфера, обстановка любви и радушия,искренняя забота, интересные мероприятия, креативные люди вокруг, недорогое проживание, счастье.
+at line:  1919  position  99
+encountered an end tag: p
+at line:  1919  position  443
+encountered some data:  
+
+
+at line:  1919  position  447
+at line:  1921  position  0
+encountered some data:  Нашли? Вот и молодцы, что нет! Потому что лишнего в 
+at line:  1921  position  3
+encountered some data:  Друзьях
+at line:  1921  position  62
+encountered some data:   быть просто не может.
+at line:  1921  position  76
+encountered an end tag: p
+at line:  1921  position  98
+encountered some data:  
+
+
+at line:  1921  position  102
+at line:  1923  position  0
+encountered some data:  Друзьями
+at line:  1923  position  10
+encountered some data:   мы зовемся не случайно: каждый из наших гостей для нас не просто 
+at line:  1923  position  25
+encountered some data:  визитер
+at line:  1923  position  98
+encountered some data:  , но близкий друг, - а друзьям, как известно, принято отдавать самое лучшее. Администраторы наших хостелов помогут Вам опре��елиться с выбором интересного места неподалеку от 
+at line:  1923  position  112
+encountered some data:  Друзей
+at line:  1923  position  294
+encountered some data:   и расскажут о самых интересных событиях в Петербурге.
+at line:  1923  position  307
+encountered an end tag: p
+at line:  1923  position  361
+encountered some data:  
+
+
+at line:  1923  position  365
+at line:  1925  position  0
+encountered some data:  Повезло нам,
+at line:  1925  position  3
+at line:  1925  position  15
+	Attributes:
+	 href = /friends-foto/
+	 target = _blank
+encountered some data:   труженикам отеля 
+at line:  1925  position  56
+encountered some data:  Друзья
+at line:  1925  position  81
+encountered an end tag: a
+at line:  1925  position  94
+encountered some data:  , - каждый день в окружении друзей, вас, таких же как мы, ценящих общение, уважающих личное пространство, любящих смотреть на город с крыш. Мы не курим, и рады признаться, что очень любим спорт и велосипеды, которые вы всегда сможете взять у нас в аренду и с ветерком по Питеру! 
+at line:  1925  position  98
+at line:  1925  position  377
+	Attributes:
+	 href = /spb/
+	 target = _blank
+encountered some data:  Наши хостелы
+at line:  1925  position  409
+encountered an end tag: a
+at line:  1925  position  421
+encountered some data:   в Петербурге окружают модные рестораны, музеи, галереи, кофейни, ночные клубы, и наиболее якрие из них включены в проект 
+at line:  1925  position  425
+encountered some data:  В кругу Друзей
+at line:  1925  position  554
+encountered some data:  , благодаря которому наши гости получают приятные скидки.
+at line:  1925  position  575
+encountered an end tag: p
+at line:  1925  position  632
+encountered some data:  
+
+
+at line:  1925  position  636
+at line:  1927  position  0
+encountered some data:  Соль наших хостелов в удачном объединении двух составляющих: с одной стороны - комфортная, уютная квартира, где всё по-домашнему спокойно, где гости ходят в тапочках, где мы все вместе сидим вечером за самоваром. С другой 
+at line:  1927  position  3
+encountered some data:   это средоточие творческих людей, музыкантов, художников, актеров,- масса интересных людей, которые создают эту особую атмосферу. Наши 
+at line:  1927  position  232
+at line:  1927  position  367
+encountered some data:  хостелы в Санкт-Петербурге
+at line:  1927  position  371
+encountered an end tag: em
+at line:  1927  position  397
+encountered some data:   гордятся своими мероприятиями, потому что на них каждый гостьможет почувствовать атмосферу позитива, открытости и творчества, и самое главное найти новых друзей!
+at line:  1927  position  402
+encountered an end tag: p
+at line:  1927  position  564
+encountered some data:  
+
+
+at line:  1927  position  568
+at line:  1929  position  0
+encountered some data:  Сейчас 
+at line:  1929  position  3
+encountered some data:  Друзья
+at line:  1929  position  17
+encountered some data:   - точка пересечения путешественников со всего мира, место встречи схоже мыслящих, и шагающих в одном направлении. Говорить о шаговой доступности всех достопримечательностей, чистоте наших номеров, заботе о госте не приходится, - ведь это в порядке вещей, а вот множественные благодарные отзывы нашим отелям и хостелам, и то, что к нам возвращаются 
+at line:  1929  position  30
+encountered some data:   красноречивее всех слов.
+at line:  1929  position  386
+encountered an end tag: p
+at line:  1929  position  411
+encountered some data:  
+
+
+at line:  1929  position  415
+at line:  1931  position  0
+encountered some data:  Для нас 
+at line:  1931  position  3
+encountered some data:  Друзья
+at line:  1931  position  18
+encountered some data:   
+at line:  1931  position  31
+encountered some data:   это дом, это семья, со своими ценностями и верой в то, чем мы занимаемся. А еще 
+at line:  1931  position  39
+encountered some data:   мы счастливы! Ждем вас, друзья!
+at line:  1931  position  127
+encountered an end tag: p
+at line:  1931  position  159
+encountered some data:  
+
+
+at line:  1931  position  163
+at line:  1933  position  0
+encountered some data:  Коллектив Друзей.
+at line:  1933  position  3
+encountered an end tag: p
+at line:  1933  position  20
+encountered some data:    
+at line:  1933  position  24
+encountered an end tag: div
+at line:  1933  position  26
+encountered some data:  																						
+
+		
+at line:  1933  position  32
+encountered an end tag: div
+at line:  1935  position  2
+encountered some data:  
+
+	
+at line:  1935  position  8
+encountered an end tag: div
+at line:  1937  position  1
+encountered some data:  
+
+	
+
+
+at line:  1937  position  7
+encountered an end tag: div
+at line:  1941  position  0
+encountered some data:  
+
+
+at line:  1941  position  6
+encountered comment:   Index Content Stop 
+at line:  1943  position  0
+encountered some data:   
+at line:  1943  position  27
+encountered an end tag: div
+at line:  1943  position  28
+encountered some data:  
+
+
+at line:  1943  position  34
+encountered comment:   Stop Main 
+at line:  1945  position  0
+encountered some data:  	
+
+	
+at line:  1945  position  18
+encountered an end tag: div
+at line:  1947  position  1
+encountered some data:  
+
+
+at line:  1947  position  7
+encountered an end tag: div
+at line:  1949  position  0
+encountered some data:  
+
+
+at line:  1949  position  6
+encountered comment:   Stop Container 
+at line:  1951  position  0
+encountered some data:  
+
+
+
+
+at line:  1951  position  23
+encountered comment:   Footer Start 
+at line:  1955  position  0
+encountered some data:  
+
+at line:  1955  position  21
+at line:  1956  position  0
+	Attributes:
+	 class = footer
+encountered some data:  
+	
+at line:  1956  position  20
+encountered comment:   Bloglinks Strat 
+at line:  1957  position  1
+encountered some data:  
+	
+at line:  1957  position  25
+at line:  1958  position  1
+	Attributes:
+	 class = bloglinks
+encountered some data:  
+		
+at line:  1958  position  24
+at line:  1959  position  2
+	Attributes:
+	 class = inbloglinks
+encountered some data:  
+		
+at line:  1959  position  27
+at line:  1960  position  2
+	Attributes:
+	 class = leftbloglinks
+encountered some data:  
+					
+at line:  1960  position  29
+at line:  1961  position  5
+	Attributes:
+	 href = /login/
+encountered some data:  Вход
+at line:  1961  position  24
+encountered an end tag: a
+at line:  1961  position  28
+encountered some data:  
+				
+at line:  1961  position  32
+encountered an end tag: div
+at line:  1962  position  4
+encountered some data:  
+			
+at line:  1962  position  10
+at line:  1963  position  3
+	Attributes:
+	 class = leftbloglinks
+encountered some data:  
+				
+at line:  1963  position  30
+encountered comment:  Подписаться на новости Друзей: <input type="text" value="email"> 
+				<div class="gobutton"></div>
+at line:  1964  position  4
+encountered some data:  
+			
+at line:  1965  position  35
+encountered an end tag: div
+at line:  1966  position  3
+encountered some data:  
+			
+at line:  1966  position  9
+at line:  1967  position  3
+	Attributes:
+	 class = rightbloglinks
+encountered some data:  
+				Друзья в блогах: 
+					
+at line:  1967  position  31
+at line:  1969  position  5
+	Attributes:
+	 href = http://www.facebook.com/HostelFriends
+	 class = facebook
+	 target = _blank
+encountered some data:  Facebook
+at line:  1969  position  86
+encountered an end tag: a
+at line:  1969  position  94
+encountered some data:  
+					
+at line:  1969  position  98
+at line:  1970  position  5
+	Attributes:
+	 href = http://www.vkontakte.ru/spbfriends 
+	 class = vkontakte
+	 target = _blank
+encountered some data:  ВКонтакте
+at line:  1970  position  85
+encountered an end tag: a
+at line:  1970  position  94
+encountered some data:  
+					
+at line:  1970  position  98
+at line:  1971  position  5
+	Attributes:
+	 href = http://www.twitter.com/friendsspb
+	 class = twitter
+	 target = _blank
+encountered some data:  Twitter
+at line:  1971  position  81
+encountered an end tag: a
+at line:  1971  position  88
+encountered some data:  
+                    
+at line:  1971  position  92
+at line:  1972  position  20
+	Attributes:
+	 href = http://instagram.com/friendshostels?ref=badge
+	 class = instagram
+	 target = _blank
+encountered some data:  Instagram
+at line:  1972  position  110
+encountered an end tag: a
+at line:  1972  position  119
+encountered some data:  
+                    			
+at line:  1972  position  123
+encountered an end tag: div
+at line:  1973  position  23
+encountered some data:  
+		
+at line:  1973  position  29
+encountered an end tag: div
+at line:  1974  position  2
+encountered some data:  
+	
+at line:  1974  position  8
+encountered an end tag: div
+at line:  1975  position  1
+encountered some data:  
+	
+at line:  1975  position  7
+encountered comment:   Bloglinks Stop 
+at line:  1976  position  1
+encountered some data:  
+	
+at line:  1976  position  24
+at line:  1977  position  1
+	Attributes:
+	 class = infooter
+encountered some data:  
+	
+		
+		
+at line:  1977  position  23
+encountered comment:   Footer Address Start 
+at line:  1980  position  2
+encountered some data:  
+		
+at line:  1980  position  31
+at line:  1981  position  2
+	Attributes:
+	 style = margin: 0 auto; width:743px; height: 125px;
+encountered some data:  
+		
+at line:  1981  position  59
+at line:  1982  position  2
+	Attributes:
+	 class = hotelitem
+encountered some data:  
+			
+at line:  1982  position  25
+at line:  1983  position  3
+	Attributes:
+	 class = name
+encountered some data:  
+				Друзья на Банковском,
+at line:  1983  position  21
+at line:  1984  position  25
+encountered an end tag: br
+at line:  1984  position  25
+encountered some data:  Друзья на Казанской,
+at line:  1984  position  30
+at line:  1984  position  50
+encountered an end tag: br
+at line:  1984  position  50
+encountered some data:   Квартира Друзей
+			
+at line:  1984  position  55
+encountered an end tag: div
+at line:  1985  position  3
+encountered some data:  
+			
+at line:  1985  position  9
+at line:  1986  position  3
+	Attributes:
+	 class = phone_tel
+encountered some data:  
+				тел.
+			
+at line:  1986  position  26
+encountered an end tag: div
+at line:  1988  position  3
+encountered some data:  
+			
+at line:  1988  position  9
+at line:  1989  position  3
+	Attributes:
+	 class = phone
+encountered some data:  
+				+7 812 
+at line:  1989  position  22
+at line:  1990  position  11
+	Attributes:
+	 style = display:none;
+encountered some data:  _
+at line:  1990  position  39
+encountered an end tag: span
+at line:  1990  position  40
+encountered some data:  310 4950
+			
+at line:  1990  position  47
+encountered an end tag: div
+at line:  1991  position  3
+encountered some data:  
+			
+at line:  1991  position  9
+at line:  1992  position  3
+	Attributes:
+	 class = skype
+encountered some data:  
+				skype: 
+at line:  1992  position  22
+at line:  1993  position  11
+	Attributes:
+	 href = skype:friends_spb
+encountered some data:  friends_spb
+at line:  1993  position  39
+encountered an end tag: a
+at line:  1993  position  50
+encountered some data:  
+			
+at line:  1993  position  54
+encountered an end tag: div
+at line:  1994  position  3
+encountered some data:  
+		
+at line:  1994  position  9
+encountered an end tag: div
+at line:  1995  position  2
+encountered some data:  
+		
+at line:  1995  position  8
+at line:  1996  position  2
+	Attributes:
+	 class = hotelitem
+encountered some data:  
+			
+at line:  1996  position  25
+at line:  1997  position  3
+	Attributes:
+	 class = name
+encountered some data:  
+				Друзья на Восстания
+			
+at line:  1997  position  21
+encountered an end tag: div
+at line:  1999  position  3
+encountered some data:  
+			
+at line:  1999  position  9
+at line:  2000  position  3
+	Attributes:
+	 class = phone_tel
+encountered some data:  
+				тел.
+			
+at line:  2000  position  26
+encountered an end tag: div
+at line:  2002  position  3
+encountered some data:  
+			
+at line:  2002  position  9
+at line:  2003  position  3
+	Attributes:
+	 class = phone
+encountered some data:  
+				+7 812 
+at line:  2003  position  22
+at line:  2004  position  11
+	Attributes:
+	 style = display:none;
+encountered some data:  _
+at line:  2004  position  39
+encountered an end tag: span
+at line:  2004  position  40
+encountered some data:  331 7799
+				
+			
+at line:  2004  position  47
+encountered an end tag: div
+at line:  2006  position  3
+encountered some data:  
+			
+at line:  2006  position  9
+at line:  2007  position  3
+	Attributes:
+	 class = skype
+encountered some data:  
+				skype: 
+at line:  2007  position  22
+at line:  2008  position  11
+	Attributes:
+	 href = skype:Friends_Griboedova
+encountered some data:  friends-booking
+at line:  2008  position  46
+encountered an end tag: a
+at line:  2008  position  61
+encountered some data:  
+			
+at line:  2008  position  65
+encountered an end tag: div
+at line:  2009  position  3
+encountered some data:  
+			
+		
+at line:  2009  position  9
+encountered an end tag: div
+at line:  2011  position  2
+encountered some data:  
+		
+		
+at line:  2011  position  8
+at line:  2013  position  2
+	Attributes:
+	 class = hotelitem
+encountered some data:  
+			
+at line:  2013  position  25
+at line:  2014  position  3
+	Attributes:
+	 class = name
+encountered some data:  
+				Друзья на Грибоедова
+			
+at line:  2014  position  21
+encountered an end tag: div
+at line:  2016  position  3
+encountered some data:  
+			
+at line:  2016  position  9
+at line:  2017  position  3
+	Attributes:
+	 class = phone_tel
+encountered some data:  
+				тел.
+			
+at line:  2017  position  26
+encountered an end tag: div
+at line:  2019  position  3
+encountered some data:  
+			
+at line:  2019  position  9
+at line:  2020  position  3
+	Attributes:
+	 class = phone
+encountered some data:  
+				+7 812 
+at line:  2020  position  22
+at line:  2021  position  11
+	Attributes:
+	 style = display:none;
+encountered some data:  _
+at line:  2021  position  39
+encountered an end tag: span
+at line:  2021  position  40
+encountered some data:  571 0151
+			
+at line:  2021  position  47
+encountered an end tag: div
+at line:  2022  position  3
+encountered some data:  
+			
+at line:  2022  position  9
+at line:  2023  position  3
+	Attributes:
+	 class = skype
+encountered some data:  
+				skype: 
+at line:  2023  position  22
+at line:  2024  position  11
+	Attributes:
+	 href = skype:Friends_Griboedova
+encountered some data:  Friends_Griboedova
+at line:  2024  position  46
+encountered an end tag: a
+at line:  2024  position  64
+encountered some data:  
+			
+at line:  2024  position  68
+encountered an end tag: div
+at line:  2025  position  3
+encountered some data:  
+			
+		
+at line:  2025  position  9
+encountered an end tag: div
+at line:  2027  position  2
+encountered some data:  
+		
+at line:  2027  position  8
+at line:  2028  position  2
+	Attributes:
+	 class = hotelitem2
+	 style = border-right: none !important
+encountered some data:  
+			
+at line:  2028  position  64
+at line:  2029  position  3
+	Attributes:
+	 class = name
+encountered some data:  
+				Друзья на Невском, Друзья на Чехова
+			
+at line:  2029  position  22
+encountered an end tag: div
+at line:  2031  position  3
+encountered some data:  
+			
+at line:  2031  position  9
+at line:  2032  position  3
+	Attributes:
+	 class = phone_tel
+encountered some data:  
+				тел.
+			
+at line:  2032  position  26
+encountered an end tag: div
+at line:  2034  position  3
+encountered some data:  
+			
+at line:  2034  position  9
+at line:  2035  position  3
+	Attributes:
+	 class = phone
+encountered some data:  
+				+7 812 
+at line:  2035  position  22
+at line:  2036  position  11
+	Attributes:
+	 style = display:none;
+encountered some data:  _
+at line:  2036  position  39
+encountered an end tag: span
+at line:  2036  position  40
+encountered some data:  272 7178
+			
+at line:  2036  position  47
+encountered an end tag: div
+at line:  2037  position  3
+encountered some data:  
+			
+at line:  2037  position  9
+at line:  2038  position  3
+	Attributes:
+	 class = skype
+encountered some data:  
+				skype: 
+at line:  2038  position  22
+at line:  2039  position  11
+	Attributes:
+	 href = skype:Abrikos-hotel
+encountered some data:  Abrikos-hotel
+at line:  2039  position  41
+encountered an end tag: a
+at line:  2039  position  54
+encountered some data:  
+			
+at line:  2039  position  58
+encountered an end tag: div
+at line:  2040  position  3
+encountered some data:  
+			
+		
+at line:  2040  position  9
+encountered an end tag: div
+at line:  2042  position  2
+encountered some data:  
+		
+at line:  2042  position  8
+at line:  2043  position  2
+	Attributes:
+	 style = clear: both
+encountered an end tag: div
+at line:  2043  position  27
+encountered some data:  
+		
+at line:  2043  position  33
+at line:  2044  position  2
+	Attributes:
+	 class = rightfooterside
+encountered some data:  
+			
+at line:  2044  position  31
+at line:  2045  position  3
+	Attributes:
+	 class = copyright
+encountered some data:  
+			
+			 
+at line:  2045  position  26
+at line:  2047  position  4
+encountered some data:  © 2006-2013. "Друзья - молодежные отели".
+at line:  2047  position  7
+at line:  2047  position  48
+encountered some data:  
+				Сеть недорогих отелей/хостелов в историческом центре города.
+at line:  2047  position  52
+encountered an end tag: b
+at line:  2048  position  64
+at line:  2048  position  68
+at line:  2048  position  72
+encountered some data:   
+
+				Все права защищены. Материалы сайта (в том числе 
+at line:  2048  position  76
+at line:  2050  position  53
+	Attributes:
+	 href = /articles/
+encountered some data:  статьи о хостелах
+at line:  2050  position  74
+encountered an end tag: a
+at line:  2050  position  91
+encountered some data:   Петербурга и записи 
+at line:  2050  position  95
+at line:  2050  position  116
+	Attributes:
+	 href = /blog/
+encountered some data:  блога “Друзей”
+at line:  2050  position  133
+encountered an end tag: a
+at line:  2050  position  147
+encountered some data:  ) являются собственностью компании 
+at line:  2050  position  151
+at line:  2050  position  186
+	Attributes:
+	 href = http://www.vashpiter.ru/
+encountered some data:  “Петербургские Отели”
+at line:  2050  position  221
+encountered an end tag: a
+at line:  2050  position  242
+encountered some data:  . Их использование возможно исключительно на условиях обязательного размещения прямой ссылки на сайт 
+at line:  2050  position  246
+at line:  2050  position  347
+	Attributes:
+	 href = http://www.friendsplace.ru/
+encountered some data:  хостелов “Друзья"
+at line:  2050  position  385
+encountered an end tag: a
+at line:  2050  position  402
+encountered some data:  , по предварительному согласованию с правообладателем.
+			
+at line:  2050  position  406
+encountered an end tag: div
+at line:  2051  position  3
+encountered some data:  		
+		
+at line:  2051  position  9
+encountered an end tag: div
+at line:  2052  position  2
+encountered some data:  	
+		
+at line:  2052  position  8
+encountered an end tag: div
+at line:  2053  position  2
+encountered some data:  
+		
+at line:  2053  position  8
+encountered comment:   Footer Address Stop 
+at line:  2054  position  2
+encountered some data:  
+		
+at line:  2054  position  30
+encountered comment:  <div style="clear:both"></div>
+		
+at line:  2055  position  2
+encountered some data:  
+		
+at line:  2056  position  5
+encountered comment:   Footer Rightside Start 
+at line:  2057  position  2
+encountered some data:  
+		
+		
+at line:  2057  position  33
+encountered comment:   Footer Rightside Stop 
+at line:  2059  position  2
+encountered some data:  
+		
+at line:  2059  position  32
+at line:  2060  position  2
+	Attributes:
+	 style = display:none;
+	 id = allhotels
+encountered some data:  
+					
+at line:  2060  position  44
+at line:  2061  position  5
+	Attributes:
+	 hid = 1
+encountered some data:  Друзья на Банковском
+at line:  2061  position  18
+encountered an end tag: div
+at line:  2061  position  38
+encountered some data:  
+					
+at line:  2061  position  44
+at line:  2062  position  5
+	Attributes:
+	 hid = 7
+encountered some data:  Друзья на Восстания
+at line:  2062  position  18
+encountered an end tag: div
+at line:  2062  position  37
+encountered some data:  
+					
+at line:  2062  position  43
+at line:  2063  position  5
+	Attributes:
+	 hid = 2
+encountered some data:  Друзья на Грибоедова
+at line:  2063  position  18
+encountered an end tag: div
+at line:  2063  position  38
+encountered some data:  
+					
+at line:  2063  position  44
+at line:  2064  position  5
+	Attributes:
+	 hid = 8
+encountered some data:  Друзья на Казанской
+at line:  2064  position  18
+encountered an end tag: div
+at line:  2064  position  37
+encountered some data:  
+					
+at line:  2064  position  43
+at line:  2065  position  5
+	Attributes:
+	 hid = 3
+encountered some data:  Друзья на Невском
+at line:  2065  position  18
+encountered an end tag: div
+at line:  2065  position  35
+encountered some data:  
+					
+at line:  2065  position  41
+at line:  2066  position  5
+	Attributes:
+	 hid = 4
+encountered some data:  Друзья на Чехова
+at line:  2066  position  18
+encountered an end tag: div
+at line:  2066  position  34
+encountered some data:  
+					
+at line:  2066  position  40
+at line:  2067  position  5
+	Attributes:
+	 hid = 5
+encountered some data:  Квартира Друзей
+at line:  2067  position  18
+encountered an end tag: div
+at line:  2067  position  33
+encountered some data:  
+				
+at line:  2067  position  39
+encountered an end tag: div
+at line:  2068  position  4
+encountered some data:  
+	
+at line:  2068  position  10
+encountered an end tag: div
+at line:  2069  position  1
+encountered some data:  	
+
+at line:  2069  position  7
+encountered an end tag: div
+at line:  2070  position  0
+encountered some data:  
+
+
+at line:  2070  position  6
+encountered comment:   Yandex.Metrika counter 
+at line:  2072  position  0
+encountered some data:  
+
+at line:  2072  position  31
+at line:  2073  position  0
+	Attributes:
+	 type = text/javascript
+encountered some data:  
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter21561703 = new Ya.Metrika({id:21561703,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+
+at line:  2073  position  31
+encountered an end tag: script
+at line:  2096  position  0
+encountered some data:  
+
+at line:  2096  position  9
+at line:  2097  position  0
+at line:  2097  position  10
+at line:  2097  position  15
+	Attributes:
+	 src = //mc.yandex.ru/watch/21561703
+	 style = position:absolute; left:-9999px;
+	 alt = 
+encountered an end tag: img
+at line:  2097  position  15
+encountered an end tag: div
+at line:  2097  position  106
+encountered an end tag: noscript
+at line:  2097  position  112
+encountered some data:  
+
+at line:  2097  position  123
+encountered comment:   /Yandex.Metrika counter 
+at line:  2098  position  0
+encountered some data:  
+
+at line:  2098  position  32
+encountered comment:   BEGIN JIVOSITE CODE {literal} 
+at line:  2099  position  0
+encountered some data:  
+
+at line:  2099  position  38
+at line:  2100  position  0
+	Attributes:
+	 type = text/javascript
+encountered some data:  
+(function(){ var widget_id = '71329';
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();
+at line:  2100  position  31
+encountered an end tag: script
+at line:  2102  position  234
+encountered some data:  
+
+at line:  2102  position  243
+encountered comment:   {/literal} END JIVOSITE CODE 
+at line:  2103  position  0
+encountered some data:  
+
+at line:  2103  position  37
+encountered comment:   Footer Stop 
+at line:  2104  position  0
+encountered some data:  
+
+
+
+at line:  2104  position  20
+at line:  2107  position  0
+	Attributes:
+	 type = text/javascript
+encountered some data:  
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+
+at line:  2107  position  31
+encountered an end tag: script
+at line:  2113  position  0
+encountered some data:  
+
+
+
+
+at line:  2113  position  9
+at line:  2117  position  0
+	Attributes:
+	 type = text/javascript
+encountered some data:  
+
+try {
+
+var pageTracker = _gat._getTracker("UA-2835123-51");
+
+pageTracker._trackPageview();
+
+} catch(err) {}
+at line:  2117  position  31
+encountered an end tag: script
+at line:  2125  position  15
+encountered some data:  
+
+
+
+
+
+
+
+
+at line:  2125  position  24
+encountered comment:   Yandex.Metrika 
+at line:  2133  position  0
+encountered some data:  
+
+
+at line:  2133  position  23
+at line:  2135  position  0
+	Attributes:
+	 src = //mc.yandex.ru/metrika/watch.js
+	 type = text/javascript
+encountered an end tag: script
+at line:  2135  position  69
+encountered some data:  
+
+
+at line:  2135  position  78
+at line:  2137  position  0
+	Attributes:
+	 style = display:none;
+at line:  2137  position  27
+	Attributes:
+	 type = text/javascript
+encountered some data:  
+
+try { var yaCounter1066713 = new Ya.Metrika(1066713); } catch(e){}
+
+
+at line:  2137  position  58
+encountered an end tag: script
+at line:  2141  position  0
+encountered an end tag: div
+at line:  2141  position  9
+encountered some data:  
+
+
+at line:  2141  position  15
+at line:  2143  position  0
+at line:  2143  position  10
+	Attributes:
+	 style = position:absolute
+at line:  2143  position  41
+	Attributes:
+	 src = //mc.yandex.ru/watch/1066713
+	 alt = 
+encountered an end tag: img
+at line:  2143  position  41
+encountered an end tag: div
+at line:  2143  position  90
+encountered an end tag: noscript
+at line:  2143  position  96
+encountered some data:  
+
+
+at line:  2143  position  107
+encountered comment:   /Yandex.Metrika 
+at line:  2145  position  0
+encountered some data:  
+
+
+
+
+at line:  2145  position  24
+at line:  2149  position  0
+encountered some data:  
+
+
+at line:  2149  position  6
+encountered an end tag: html
+at line:  2151  position  0
+encountered some data:  
+
+at line:  2151  position  7
